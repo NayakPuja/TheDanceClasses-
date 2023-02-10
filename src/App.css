@@ -1,0 +1,220 @@
+body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.App {
+  text-align: center;
+}
+
+.nav-color{background-color:  rgb(235, 61, 61);}
+.navbar-text{color: whitesmoke;}
+ .bg-red{
+  background-color: rgb(235, 61, 61);
+  color:whitesmoke;
+ }
+
+ .align-text{
+  text-align: center;
+ }
+ #tb{
+  border:3px solid  rgb(235, 61, 61);
+ }
+
+ h1{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 200;
+  line-height: 1;
+ }
+
+ .banner-txt{margin: 15%;position: relative;}
+ .content {
+  position: absolute; /* Position the background text */
+  bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1; /* Grey text */
+  width: 100%; /* Full width */
+  padding: 20px; /* Some padding */
+}
+
+#offer{
+  background: url('./Images/bg3.jpg') repeat-x;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    padding: 50px 0 50px 0;
+  
+}
+
+
+ p{
+  font-style:normal;
+  line-height: 2;
+  font-family:"Libre Franklin",sans-serif;
+  font-size: 15px;
+  text-align: center;
+  font-weight: 400;
+  color: #999;
+ }
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+input[type=email] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+input[type=password] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+button[type=submit] {
+background-color: green;
+color:white;
+text-align: center;
+margin-top: 15px;
+align-items: center;
+border-radius: 10px;
+padding: 6px 10px 6px 10px;
+
+}
+
+button[type=submit]:hover {
+  background-color: #54dc5b;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.zoom{
+  padding:5px;
+  text-align: center;
+  transition: transform.2s;
+  margin:0 auto;
+}
+.zoom2{
+  padding:5px;
+  text-align: center;
+  transition: transform.2s;
+  margin:0 auto;
+}
+.img-h{width:300px; opacity: 0.6;}
+
+.zoom:hover{
+  transform: scale(1.5);
+}
+
+.zoom2:hover{
+  transform: scale(1.5);
+}
+
+/* .form2-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+} */
+ 
+
+
+.flip-box {
+  background-color: transparent;
+  width: 500px;
+  height: 300px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+}
+
+/* Do an hor/izontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the back side */
+.flip-box-back {
+  background-color: rgba(30, 255, 195, 0.905);
+  color: whitesmoke;
+  transform: rotateY(180deg);
+}
+ 
+ .btn{
+
+margin-left: 490px;
+
+color: white;
+
+ }
+ #fm{
+  position: relative;
+ }
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
